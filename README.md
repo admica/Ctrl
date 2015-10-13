@@ -1,8 +1,6 @@
-# Ctrl
+![Ctrl logo](https://github.com/admica/Ctrl/blob/master/images/logo.png)
 
 Configurable remote control panel intended for PC keyboard control from Android. Like the key on your keyboard, it gives you control. A work in progress...
-
-![Ctrl logo](https://github.com/admica/Ctrl/blob/master/images/logo.png)
 
 #Build Instructions
 
