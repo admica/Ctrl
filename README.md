@@ -1,16 +1,15 @@
-# TotalControl
+# Ctrl
 
-Configurable remote control panel primarily intended for PC keyboard control from Android.
-A work in progress...
+Configurable remote control panel primarily intended for PC keyboard control from Android. As in the key on your keyboard, it gives you more control. A work in progress...
 
-![TotalControl logo](https://github.com/admica/TotalControl/blob/master/logo.png)
+![Ctrl logo](https://github.com/admica/Ctrl/blob/master/logo.png)
 
 #Build Instructions
 
 <h4>Android App</h4>
-* install kivy
-* install buildozer
-* buildozer android debug deploy run
+* ![Install Kivy](http://kivy.org/docs/installation/installation-linux.html) (pip install --upgrade kivy)
+* ![Install buildozer](https://github.com/kivy/buildozer) (pip install --upgrade buildozer)
+* $ buildozer android debug deploy run
 
 <h4>PC App</h4>
 * Run setup.exe
