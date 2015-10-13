@@ -20,43 +20,8 @@ class RootWidget(FloatLayout):
         self.q = q
         #Clock.schedule_interval(self.q_watch, 0.2)
 
-    def cb_press(self, x):
-        print x
-
-    def q_watch(self, *args):
-        try:
-            data = self.q.get_nowait()
-            self.gui_update(data)
-        except:
-            pass
-
-
-    def gui_update(self, data):
-        # format data
-        payload = "Node %s Temp: %s'C RH: %s%% Up: %ss" % (data[0], data[3], data[4], data[5])
-        print payload
-
-        # modify gui elements
-        if data[0] == '1':
-            self.label1.text = payload
-        elif data[0] == '2':
-            self.label2.text = payload
-        elif data[0] == '3':
-            self.label3.text = payload
-        elif data[0] == '4':
-            self.label4.text = payload
-        elif data[0] == '5':
-            self.label5.text = payload
-        elif data[0] == '6':
-            self.label5.text = payload
-        elif data[0] == '7':
-            self.label5.text = payload
-        elif data[0] == '8':
-            self.label5.text = payload
-        elif data[0] == '9':
-            self.label5.text = payload
-        else:
-            print "Invalid data", data
+    def cb_press(self, keys):
+        print keys
 
 
 class WebServer(SocketServer.ThreadingTCPServer):
