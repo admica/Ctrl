@@ -1,14 +1,14 @@
 # Ctrl
 
-Configurable remote control panel primarily intended for PC keyboard control from Android. As in the key on your keyboard, it gives you more control. A work in progress...
+Configurable remote control panel intended for PC keyboard control from Android. Like the key on your keyboard, it gives you control. A work in progress...
 
 ![Ctrl logo](https://github.com/admica/Ctrl/blob/master/logo.png)
 
 #Build Instructions
 
 <h4>Android App</h4>
-* ![Install Kivy](http://kivy.org/docs/installation/installation-linux.html) (pip install --upgrade kivy)
-* ![Install buildozer](https://github.com/kivy/buildozer) (pip install --upgrade buildozer)
+* ![Install Kivy](http://kivy.org/docs/installation/installation-linux.html) ($ sudo pip install --upgrade kivy)
+* ![Install buildozer](https://github.com/kivy/buildozer) ($ sudo pip install --upgrade buildozer)
 * $ buildozer android debug deploy run
 
 <h4>PC App</h4>
