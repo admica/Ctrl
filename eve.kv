@@ -5,345 +5,386 @@
 
 <Butt@Button>:
     font_size: 28
-    color: 0.9, 0.9, 0.9, 1.0
-    size_hint: (.125,None)
+    color: 0.95, 0.95, 0.95, 1.0
+    size_hint: (.124,None)
     height: self.width
 
 <RootWidget>:
-    cols: 1
-    canvas:
-        Rectangle:
-            pos: self.pos
-            size: self.size
-            source: "images/bg.png"
-
-    b1: b1
-    b2: b2
-    b3: b3
-    b4: b4
-    b5: b5
-    b6: b6
-    b7: b7
-    b8: b8
-    b9: b9
-    b10: b10
-    b11: b11
-    b12: b12
-    b13: b13
-    b14: b14
-    b15: b15
-    b16: b16
-    b17: b17
-    b18: b18
-    b19: b19
-    b20: b20
-    b21: b21
-    b22: b22
-    b23: b23
-    b24: b24
-    b25: b25
-    b26: b26
-    b27: b27
-    b28: b28
-    b29: b29
-    b30: b30
-    b31: b31
-    b32: b32
-    b33: b33
-    b34: b34
-    b35: b35
-    b36: b36
+    setup_ww: (root.width/9.0)
+    setup_hh: (root.height/9.0)
 
     ww: (root.width/8.0)
-    hh: (root.width/7.0)
+    hh: (root.height/5.0)
 
     offw: (root.width/8.0)/10.0
-    offh: (root.width/7.0)/10.0
+    offh: (root.height/5.0)/10.0
 
-    Butt:
-        id: b1
-        text: "H1"
-        pos: root.ww*0, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f1")
-    Butt:
-        id: b2
-        text: "H2"
-        pos: root.ww*1, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f2")
-    Butt:
-        id: b3
-        text: "H3"
-        pos: root.ww*2, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f3")
-    Butt:
-        id: b4
-        text: "H4"
-        pos: root.ww*3, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f4")
-    Butt:
-        id: b5
-        text: "H5"
-        pos: root.ww*4, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f5")
-    Butt:
-        id: b6
-        text: "H6"
-        pos: root.ww*5, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f6")
-    Butt:
-        id: b7
-        text: "H7"
-        pos: root.ww*6, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f7")
-    Butt:
-        id: b8
-        text: "H8"
-        pos: root.ww*7, root.height-root.hh*3
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("f8")
-    Butt:
-        id: b9
-        text: "M1"
-        pos: root.ww*0, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f1")
-    Butt:
-        id: b10
-        text: "M2"
-        pos: root.ww*1, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f2")
-    Butt:
-        id: b11
-        text: "M3"
-        pos: root.ww*2, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f3")
-    Butt:
-        id: b12
-        text: "M4"
-        pos: root.ww*3, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f4")
-    Butt:
-        id: b13
-        text: "M5"
-        pos: root.ww*4, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f5")
-    Butt:
-        id: b14
-        text: "M6"
-        pos: root.ww*5, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f6")
-    Butt:
-        id: b15
-        text: "M7"
-        pos: root.ww*6, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f7")
-    Butt:
-        id: b16
-        text: "M8"
-        pos: root.ww*7, root.height-root.hh*4
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("shift-f8")
-    Butt:
-        id: b17
-        text: "L1"
-        pos: root.ww*0, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f1")
-    Butt:
-        id: b18
-        text: "L2"
-        pos: root.ww*1, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f2")
-    Butt:
-        id: b19
-        text: "L3"
-        pos: root.ww*2, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f3")
-    Butt:
-        id: b20
-        text: "L4"
-        pos: root.ww*3, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f4")
-    Butt:
-        id: b21
-        text: "L5"
-        pos: root.ww*4, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f5")
-    Butt:
-        id: b22
-        text: "L6"
-        pos: root.ww*5, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f6")
-    Butt:
-        id: b23
-        text: "L7"
-        pos: root.ww*6, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f7")
-    Butt:
-        id: b24
-        text: "L8"
-        pos: root.ww*7, root.height-root.hh*5
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        on_press: root.cb_press("alt-f8")
-    Butt:
-        id: b25
-        text: "Orbit"
-        font_size: 23
-        pos: root.ww*0+root.offw*1, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_blue1.png"
-        background_down: "./images/arcade_blue2.png"
-        size_hint: (.142,None)
-        height: self.width
-        on_press: root.cb_press("q")
-    Butt:
-        id: b26
-        text: "Range"
-        font_size: 23
-        pos: root.ww*1+root.ww/10*2, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_blue1.png"
-        background_down: "./images/arcade_blue2.png"
-        size_hint: (.142,None)
-        height: self.width
-        on_press: root.cb_press("w")
-    Butt:
-        id: b27
-        text: "Align"
-        font_size: 23
-        pos: root.ww*2+root.offw*3, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_blue1.png"
-        background_down: "./images/arcade_blue2.png"
-        size_hint: (.142,None)
-        height: self.width
-        on_press: root.cb_press("e")
-    Butt:
-        id: b28
-        text: "Warp"
-        font_size: 23
-        pos: root.ww*3+root.offw*4, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_yellow1.png"
-        background_down: "./images/arcade_yellow2.png"
-        size_hint: (.142,None)
-        height: self.width
-        on_press: root.cb_press("d")
-    Butt:
-        id: b29
-        text: "Primary"
-        font_size: 16
-        pos: root.ww*5-root.offw, root.height-root.hh*2-root.offh
-        background_normal: "./images/arcade_orange1.png"
-        background_down: "./images/arcade_orange2.png"
-        size_hint: (.133,None)
-        height: self.width
-        on_press: root.cb_press("ctrl-o")
-    Butt:
-        id: b30
-        text: "Second"
-        font_size: 16
-        pos: root.ww*6-root.offw/2, root.height-root.hh*2-root.offh
-        background_normal: "./images/arcade_orange1.png"
-        background_down: "./images/arcade_orange2.png"
-        size_hint: (.133,None)
-        height: self.width
-        on_press: root.cb_press("ctrl-p")
-    Butt:
-        id: b31
-        text: "Shield"
-        font_size: 18
-        pos: root.ww*5-root.offw, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_purple1.png"
-        background_down: "./images/arcade_purple2.png"
-        size_hint: (.133,None)
-        height: self.width
-        on_press: root.cb_press("x")
-    Butt:
-        id: b32
-        text: "Armor"
-        font_size: 18
-        pos: root.ww*6-root.offw/2, root.height-root.hh*1-root.offh*1.3
-        background_normal: "./images/arcade_purple1.png"
-        background_down: "./images/arcade_purple2.png"
-        size_hint: (.133,None)
-        height: self.width
-        on_press: root.cb_press("y")
-    Butt:
-        id: b33
-        text: "Engage"
-        font_size: 16
-        pos: root.ww*0+root.offw*6.5, root.height-root.hh*2
-        background_normal: "./images/arcade_red1.png"
-        background_down: "./images/arcade_red2.png"
-        size_hint: (.11,None)
-        height: self.width
-        on_press: root.cb_press("alt-1")
-    Butt:
-        id: b34
-        text: "Orbit"
-        font_size: 16
-        pos: root.ww*1+root.offw*6, root.height-root.hh*2
-        background_normal: "./images/arcade_green1.png"
-        background_down: "./images/arcade_green2.png"
-        size_hint: (.11,None)
-        height: self.width
-        on_press: root.cb_press("alt-2")
-    Butt:
-        id: b35
-        text: "Bay"
-        font_size: 16
-        pos: root.ww*2+root.offw*5.5, root.height-root.hh*2
-        background_normal: "./images/arcade_green1.png"
-        background_down: "./images/arcade_green2.png"
-        size_hint: (.11,None)
-        height: self.width
-        on_press: root.cb_press("alt-3")
-    Butt:
-        id: b36
-        text: "Undock"
-        font_size: 16
-        pos: root.ww*7-root.offw/3, root.height-root.hh*1.5-root.offh-root.offh
-        background_normal: "./images/arcade_grey1.png"
-        background_down: "./images/arcade_grey2.png"
-        on_press: root.cb_press("ctrl-x")
- 
+    ScreenManager:
+        id: screenmgr
+        Screen:
+            name: "screen_setup"
+            Label:
+                id: label_heading
+                text: "Enter ip/name and port of PC to control."
+                font_size: 28
+                size_hint: (None,None)
+                size: 500,50
+                pos: root.setup_ww, root.setup_hh*5
+                background_normal: "./images/arcade_button_box_black.png"
+
+            Label:
+                id: label_host
+                text: "Host:"
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww, root.setup_hh*7
+
+            Label:
+                id: label_port
+                text: "Port:"
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww, root.setup_hh*6
+
+            TextInput:
+                id: input_host
+                text: root.host
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww+label_host.width, root.setup_hh*7
+                multiline: False
+                padding_x: 17
+                padding_y: 8
+                background_normal: "./images/arcade_button_box_white.png"
+                background_active: "./images/arcade_button_box_white.png"
+                on_text: root.cb_label_host_text(self.text)
+
+            TextInput:
+                id: input_port
+                text: str(root.port)
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                multiline: False
+                padding_x: 17
+                padding_y: 8
+                pos: root.setup_ww+label_host.width, root.setup_hh*6
+                background_normal: "./images/arcade_button_box_white.png"
+                background_active: "./images/arcade_button_box_white.png"
+                on_text: root.cb_label_port_text(self.text)
+
+            Button:
+                id: button_connect
+                text: "Connect"
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww+label_host.width, root.setup_hh*4
+                on_press: root.cb_button_connect_press()
+                background_normal: "./images/arcade_button_box_blue.png"
+                background_down: "./images/arcade_button_box_blue.png"
+
+        Screen:
+            name: "screen_connecting"
+            Label:
+                id: label_connecting
+                text: "Connecting..."
+                font_size: 28
+
+        Screen:
+            name: "screen_main"
+            canvas:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                    source: "images/bg.png"
+            Butt:
+                id: b1
+                text: "H1"
+                pos: root.ww*0, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f1")
+            Butt:
+                id: b2
+                text: "H2"
+                pos: root.ww*1, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f2")
+            Butt:
+                id: b3
+                text: "H3"
+                pos: root.ww*2, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f3")
+            Butt:
+                id: b4
+                text: "H4"
+                pos: root.ww*3, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f4")
+            Butt:
+                id: b5
+                text: "H5"
+                pos: root.ww*4, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f5")
+            Butt:
+                id: b6
+                text: "H6"
+                pos: root.ww*5, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f6")
+            Butt:
+                id: b7
+                text: "H7"
+                pos: root.ww*6, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f7")
+            Butt:
+                id: b8
+                text: "H8"
+                pos: root.ww*7, root.height-root.hh*3
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("f8")
+            Butt:
+                id: b9
+                text: "M1"
+                pos: root.ww*0, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f1")
+            Butt:
+                id: b10
+                text: "M2"
+                pos: root.ww*1, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f2")
+            Butt:
+                id: b11
+                text: "M3"
+                pos: root.ww*2, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f3")
+            Butt:
+                id: b12
+                text: "M4"
+                pos: root.ww*3, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f4")
+            Butt:
+                id: b13
+                text: "M5"
+                pos: root.ww*4, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f5")
+            Butt:
+                id: b14
+                text: "M6"
+                pos: root.ww*5, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f6")
+            Butt:
+                id: b15
+                text: "M7"
+                pos: root.ww*6, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f7")
+            Butt:
+                id: b16
+                text: "M8"
+                pos: root.ww*7, root.height-root.hh*4
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("shift-f8")
+            Butt:
+                id: b17
+                text: "L1"
+                pos: root.ww*0, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f1")
+            Butt:
+                id: b18
+                text: "L2"
+                pos: root.ww*1, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f2")
+            Butt:
+                id: b19
+                text: "L3"
+                pos: root.ww*2, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f3")
+            Butt:
+                id: b20
+                text: "L4"
+                pos: root.ww*3, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f4")
+            Butt:
+                id: b21
+                text: "L5"
+                pos: root.ww*4, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f5")
+            Butt:
+                id: b22
+                text: "L6"
+                pos: root.ww*5, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f6")
+            Butt:
+                id: b23
+                text: "L7"
+                pos: root.ww*6, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f7")
+            Butt:
+                id: b24
+                text: "L8"
+                pos: root.ww*7, root.height-root.hh*5
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                on_press: root.cb_press("alt-f8")
+            Butt:
+                id: b25
+                text: "Orbit"
+                font_size: 23
+                pos: root.ww*0+root.offw*1, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_blue1.png"
+                background_down: "./images/arcade_blue2.png"
+                size_hint: (.142,None)
+                height: self.width
+                on_press: root.cb_press("q")
+            Butt:
+                id: b26
+                text: "Range"
+                font_size: 23
+                pos: root.ww*1+root.ww/10*2, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_blue1.png"
+                background_down: "./images/arcade_blue2.png"
+                size_hint: (.142,None)
+                height: self.width
+                on_press: root.cb_press("w")
+            Butt:
+                id: b27
+                text: "Align"
+                font_size: 23
+                pos: root.ww*2+root.offw*3, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_blue1.png"
+                background_down: "./images/arcade_blue2.png"
+                size_hint: (.142,None)
+                height: self.width
+                on_press: root.cb_press("e")
+            Butt:
+                id: b28
+                text: "Warp"
+                font_size: 23
+                pos: root.ww*3+root.offw*4, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_yellow1.png"
+                background_down: "./images/arcade_yellow2.png"
+                size_hint: (.142,None)
+                height: self.width
+                on_press: root.cb_press("d")
+            Butt:
+                id: b29
+                text: "Primary"
+                font_size: 16
+                pos: root.ww*5-root.offw, root.height-root.hh*2-root.offh
+                background_normal: "./images/arcade_orange1.png"
+                background_down: "./images/arcade_orange2.png"
+                size_hint: (.133,None)
+                height: self.width
+                on_press: root.cb_press("ctrl-o")
+            Butt:
+                id: b30
+                text: "Second"
+                font_size: 16
+                pos: root.ww*6-root.offw/2, root.height-root.hh*2-root.offh
+                background_normal: "./images/arcade_orange1.png"
+                background_down: "./images/arcade_orange2.png"
+                size_hint: (.133,None)
+                height: self.width
+                on_press: root.cb_press("ctrl-p")
+            Butt:
+                id: b31
+                text: "Shield"
+                font_size: 18
+                pos: root.ww*5-root.offw, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_purple1.png"
+                background_down: "./images/arcade_purple2.png"
+                size_hint: (.133,None)
+                height: self.width
+                on_press: root.cb_press("x")
+            Butt:
+                id: b32
+                text: "Armor"
+                font_size: 18
+                pos: root.ww*6-root.offw/2, root.height-root.hh*1-root.offh*1.3
+                background_normal: "./images/arcade_purple1.png"
+                background_down: "./images/arcade_purple2.png"
+                size_hint: (.133,None)
+                height: self.width
+                on_press: root.cb_press("y")
+            Butt:
+                id: b33
+                text: "Engage"
+                font_size: 16
+                pos: root.ww*0+root.offw*6.5, root.height-root.hh*2
+                background_normal: "./images/arcade_red1.png"
+                background_down: "./images/arcade_red2.png"
+                size_hint: (.11,None)
+                height: self.width
+                on_press: root.cb_press("alt-1")
+            Butt:
+                id: b34
+                text: "Orbit"
+                font_size: 16
+                pos: root.ww*1+root.offw*6, root.height-root.hh*2
+                background_normal: "./images/arcade_green1.png"
+                background_down: "./images/arcade_green2.png"
+                size_hint: (.11,None)
+                height: self.width
+                on_press: root.cb_press("alt-2")
+            Butt:
+                id: b35
+                text: "Bay"
+                font_size: 16
+                pos: root.ww*2+root.offw*5.5, root.height-root.hh*2
+                background_normal: "./images/arcade_green1.png"
+                background_down: "./images/arcade_green2.png"
+                size_hint: (.11,None)
+                height: self.width
+                on_press: root.cb_press("alt-3")
+            Butt:
+                id: b36
+                text: "Undock"
+                font_size: 16
+                pos: root.ww*7-root.offw/3, root.height-root.hh*1.5-root.offh-root.offh
+                background_normal: "./images/arcade_grey1.png"
+                background_down: "./images/arcade_grey2.png"
+                on_press: root.cb_press("ctrl-x")
+         
