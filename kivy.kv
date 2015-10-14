@@ -3,7 +3,7 @@
     center_y: self.parent.center_y
     allow_stretch: False
 
-<Butt@Button>:
+<B@Button>:
     font_size: 28
     color: 0.95, 0.95, 0.95, 1.0
     size_hint: (.124,None)
@@ -86,6 +86,8 @@
                 on_press: root.cb_button_connect_press()
                 background_normal: "./images/arcade_button_box_blue.png"
                 background_down: "./images/arcade_button_box_blue.png"
+                use_bubble: False
+                use_handles: False
 
         Screen:
             name: "screen_connecting"
@@ -101,175 +103,175 @@
                     pos: self.pos
                     size: self.size
                     source: "images/bg.png"
-            Butt:
+            B:
                 id: b1
                 text: "H1"
                 pos: root.ww*0, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f1")
-            Butt:
+            B:
                 id: b2
                 text: "H2"
                 pos: root.ww*1, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f2")
-            Butt:
+            B:
                 id: b3
                 text: "H3"
                 pos: root.ww*2, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f3")
-            Butt:
+            B:
                 id: b4
                 text: "H4"
                 pos: root.ww*3, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f4")
-            Butt:
+            B:
                 id: b5
                 text: "H5"
                 pos: root.ww*4, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f5")
-            Butt:
+            B:
                 id: b6
                 text: "H6"
                 pos: root.ww*5, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f6")
-            Butt:
+            B:
                 id: b7
                 text: "H7"
                 pos: root.ww*6, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f7")
-            Butt:
+            B:
                 id: b8
                 text: "H8"
                 pos: root.ww*7, root.height-root.hh*3
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("f8")
-            Butt:
+            B:
                 id: b9
                 text: "M1"
                 pos: root.ww*0, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f1")
-            Butt:
+            B:
                 id: b10
                 text: "M2"
                 pos: root.ww*1, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f2")
-            Butt:
+            B:
                 id: b11
                 text: "M3"
                 pos: root.ww*2, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f3")
-            Butt:
+            B:
                 id: b12
                 text: "M4"
                 pos: root.ww*3, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f4")
-            Butt:
+            B:
                 id: b13
                 text: "M5"
                 pos: root.ww*4, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f5")
-            Butt:
+            B:
                 id: b14
                 text: "M6"
                 pos: root.ww*5, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f6")
-            Butt:
+            B:
                 id: b15
                 text: "M7"
                 pos: root.ww*6, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f7")
-            Butt:
+            B:
                 id: b16
                 text: "M8"
                 pos: root.ww*7, root.height-root.hh*4
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("shift-f8")
-            Butt:
+            B:
                 id: b17
                 text: "L1"
                 pos: root.ww*0, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f1")
-            Butt:
+            B:
                 id: b18
                 text: "L2"
                 pos: root.ww*1, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f2")
-            Butt:
+            B:
                 id: b19
                 text: "L3"
                 pos: root.ww*2, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f3")
-            Butt:
+            B:
                 id: b20
                 text: "L4"
                 pos: root.ww*3, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f4")
-            Butt:
+            B:
                 id: b21
                 text: "L5"
                 pos: root.ww*4, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f5")
-            Butt:
+            B:
                 id: b22
                 text: "L6"
                 pos: root.ww*5, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f6")
-            Butt:
+            B:
                 id: b23
                 text: "L7"
                 pos: root.ww*6, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f7")
-            Butt:
+            B:
                 id: b24
                 text: "L8"
                 pos: root.ww*7, root.height-root.hh*5
                 background_normal: "./images/arcade_red1.png"
                 background_down: "./images/arcade_red2.png"
                 on_press: root.cb_press("alt-f8")
-            Butt:
+            B:
                 id: b25
                 text: "Orbit"
                 font_size: 23
@@ -279,7 +281,7 @@
                 size_hint: (.142,None)
                 height: self.width
                 on_press: root.cb_press("q")
-            Butt:
+            B:
                 id: b26
                 text: "Range"
                 font_size: 23
@@ -289,7 +291,7 @@
                 size_hint: (.142,None)
                 height: self.width
                 on_press: root.cb_press("w")
-            Butt:
+            B:
                 id: b27
                 text: "Align"
                 font_size: 23
@@ -299,7 +301,7 @@
                 size_hint: (.142,None)
                 height: self.width
                 on_press: root.cb_press("e")
-            Butt:
+            B:
                 id: b28
                 text: "Warp"
                 font_size: 23
@@ -309,7 +311,7 @@
                 size_hint: (.142,None)
                 height: self.width
                 on_press: root.cb_press("d")
-            Butt:
+            B:
                 id: b29
                 text: "Primary"
                 font_size: 16
@@ -319,7 +321,7 @@
                 size_hint: (.133,None)
                 height: self.width
                 on_press: root.cb_press("ctrl-o")
-            Butt:
+            B:
                 id: b30
                 text: "Second"
                 font_size: 16
@@ -329,7 +331,7 @@
                 size_hint: (.133,None)
                 height: self.width
                 on_press: root.cb_press("ctrl-p")
-            Butt:
+            B:
                 id: b31
                 text: "Shield"
                 font_size: 18
@@ -339,7 +341,7 @@
                 size_hint: (.133,None)
                 height: self.width
                 on_press: root.cb_press("x")
-            Butt:
+            B:
                 id: b32
                 text: "Armor"
                 font_size: 18
@@ -349,7 +351,7 @@
                 size_hint: (.133,None)
                 height: self.width
                 on_press: root.cb_press("y")
-            Butt:
+            B:
                 id: b33
                 text: "Engage"
                 font_size: 16
@@ -359,7 +361,7 @@
                 size_hint: (.11,None)
                 height: self.width
                 on_press: root.cb_press("alt-1")
-            Butt:
+            B:
                 id: b34
                 text: "Orbit"
                 font_size: 16
@@ -369,7 +371,7 @@
                 size_hint: (.11,None)
                 height: self.width
                 on_press: root.cb_press("alt-2")
-            Butt:
+            B:
                 id: b35
                 text: "Bay"
                 font_size: 16
@@ -379,7 +381,7 @@
                 size_hint: (.11,None)
                 height: self.width
                 on_press: root.cb_press("alt-3")
-            Butt:
+            B:
                 id: b36
                 text: "Undock"
                 font_size: 16
