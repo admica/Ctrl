@@ -10,6 +10,9 @@
     height: self.width
 
 <RootWidget>:
+    setup_ww: (root.width/9.0)
+    setup_hh: (root.height/9.0)
+
     ww: (root.width/8.0)
     hh: (root.height/5.0)
 
@@ -17,59 +20,82 @@
     offh: (root.height/5.0)/10.0
 
     ScreenManager:
-        id: _screen_manager
+        id: screenmgr
         Screen:
-            name: "screen1"
+            name: "screen_setup"
+            Label:
+                id: label_heading
+                text: "Enter ip/name and port of PC to control."
+                font_size: 28
+                size_hint: (None,None)
+                size: 500,50
+                pos: root.setup_ww, root.setup_hh*5
+                background_normal: "./images/arcade_button_box_black.png"
+
             Label:
                 id: label_host
                 text: "Host:"
-                font_size: 25
-                size_hint: (.25,None)
-                height: 50
-                pos: root.ww, root.hh*3
-
-            TextInput:
-                id: input_host
-                text: root.host
-                font_size: 25
-                size_hint: (.25,None)
-                height: 50
-                pos: root.ww+label_host.width, root.hh*3
-                on_text: self.cb_label_host_text(self.text)
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww, root.setup_hh*7
 
             Label:
                 id: label_port
                 text: "Port:"
-                font_size: 25
-                size_hint: (.25,None)
-                height: 50
-                pos: root.ww, root.hh*2
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww, root.setup_hh*6
+
+            TextInput:
+                id: input_host
+                text: root.host
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww+label_host.width, root.setup_hh*7
+                multiline: False
+                padding_x: 17
+                padding_y: 8
+                background_normal: "./images/arcade_button_box_white.png"
+                background_active: "./images/arcade_button_box_white.png"
+                on_text: root.cb_label_host_text(self.text)
 
             TextInput:
                 id: input_port
                 text: str(root.port)
-                font_size: 25
-                size_hint: (.25,None)
-                height: 50
-                pos: root.ww+label_host.width, root.hh*2
-                on_text: self.cb_label_host_text(self.text)
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                multiline: False
+                padding_x: 17
+                padding_y: 8
+                pos: root.setup_ww+label_host.width, root.setup_hh*6
+                background_normal: "./images/arcade_button_box_white.png"
+                background_active: "./images/arcade_button_box_white.png"
+                on_text: root.cb_label_port_text(self.text)
 
             Button:
                 id: button_connect
                 text: "Connect"
-                size_hint: (.5,None)
-                pos: root.ww, root.hh*1
-                on_press: _screen_manager.current = 'screen2'
+                font_size: 26
+                size_hint: (None,None)
+                size: 250,50
+                pos: root.setup_ww+label_host.width, root.setup_hh*4
+                on_press: root.cb_button_connect_press()
+                background_normal: "./images/arcade_button_box_blue.png"
+                background_down: "./images/arcade_button_box_blue.png"
 
         Screen:
-            name: "screen2"
-            Button:
-                markup: True
-                text: "[size=24]Connecting to %s:%s[/size]" % (root.host, root.port)
-                on_press: _screen_manager.current = 'screen3'
+            name: "screen_connecting"
+            Label:
+                id: label_connecting
+                text: "Connecting..."
+                font_size: 28
 
         Screen:
-            name: "screen3"
+            name: "screen_main"
             canvas:
                 Rectangle:
                     pos: self.pos
